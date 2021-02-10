@@ -41,8 +41,8 @@ function runCity(){
 async function currentWeather(city){
     document.querySelector('#forecastCard').innerHTML = ""
     // fetch weather for given city
-    weather = await fetch (`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=fe880404e0472c9c21ec6d8e606cea67`).then(r => r.json())
-    weatherCurrent = await fetch(`http://api.openweathermap.org/data/2.5/onecall?lat=${weather.coord.lat}&lon=${weather.coord.lon}&units=metric&appid=fe880404e0472c9c21ec6d8e606cea67`).then(r => r.json())
+    weather = await fetch (`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=fe880404e0472c9c21ec6d8e606cea67`).then(r => r.json())
+    weatherCurrent = await fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${weather.coord.lat}&lon=${weather.coord.lon}&units=metric&appid=fe880404e0472c9c21ec6d8e606cea67`).then(r => r.json())
     console.log(weather)
     //Fills in current weather 
     document.querySelector('#currentIcon').src = `https://openweathermap.org/img/w/${weatherCurrent.current.weather[0].icon}.png`
