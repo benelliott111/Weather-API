@@ -6,4 +6,4 @@ When a city is searched, it is saved to local storage and a button is added belo
 
 The webpage can be accessed here: https://benelliott111.github.io/Weather-API/
 
-![WeatherAPI](./Assets/Screenshot.png)
+![WeatherAPI](./Assets/Screenshot.PNG)
